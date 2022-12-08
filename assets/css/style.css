@@ -118,6 +118,18 @@ a:hover {
   margin: 16px;
 }
 
+.gc .gc-main .gc-features .gc-images-features p {
+  padding: 24px;
+  text-align: justify;
+  font-size: 14px;
+  border-left: 4px solid rgba(255, 255, 255, 0.1);
+  border-right: none;
+}
+.gc .gc-main .gc-features .gc-images-features.right p {
+  border-right: 4px solid rgba(255, 255, 255, 0.1);
+  border-left: none !important;
+}
+
 @media (max-width: 600px) {
   .gc .gc-main .gc-features .gc-images-features {
     flex-direction: column;
@@ -128,12 +140,6 @@ a:hover {
   .gc .gc-main .gc-features .gc-images-features p {
     order: 1;
   }
-}
-
-.gc .gc-main .gc-features .gc-images-features p {
-  padding: 24px;
-  text-align: justify;
-  font-size: 14px;
 }
 
 .gc .gc-main .gc-contributors {

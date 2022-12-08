@@ -94,6 +94,13 @@ a:hover {
   text-decoration: none;
 }
 
+.gc .gc-main .gc-features .img-discord{
+  height: 130px;
+  width: 270px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
 .gc .gc-main .gc-features h4 {
   color: var(--white-gray);
   font-weight: bold;

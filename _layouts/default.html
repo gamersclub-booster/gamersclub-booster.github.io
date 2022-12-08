@@ -1,48 +1,466 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="pt-BR">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-{% seo %}
+    <title>Gamersclub Booster - a sua extensão para a GamersClub!</title>
+
+    <meta name="generator" content="Jekyll v3.9.0" />
+    <meta property="og:title" content="website" />
+    <meta property="og:locale" content="pt-BR" />
+    <meta
+      name="description"
+      content="Extensão para navegadores com o intuito de melhorar a plataforma Gamersclub"
+    />
+    <meta
+      property="og:description"
+      content="Extensão para navegadores com o intuito de melhorar a plataforma Gamersclub"
+    />
+    <link rel="canonical" href="https://gamersclub-booster.github.io/" />
+    <meta property="og:url" content="https://gamersclub-booster.github.io/" />
+    <meta property="og:site_name" content="Gamersclub Booster" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:title" content="website" />
+    <script type="application/ld+json">
+      {
+        "@type": "WebSite",
+        "headline": "website",
+        "url": "https://gamersclub-booster.github.io/",
+        "description": "Extensão para navegadores com o intuito de melhorar a plataforma Gamersclub",
+        "name": "Gamersclub Booster",
+        "@context": "https://schema.org"
+      }
+    </script>
+
+    <link
+      rel="shortcut icon"
+      href="src/assets/img/logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="src/assets/css/style.css" />
   </head>
 
   <body>
-
-    <header>
-      <div class="container">
-        <a id="a-title" href="{{ '/' | relative_url }}">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        </a>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
-
-        <section id="downloads">
-          {% if site.show_downloads %}
-            <a href="{{ site.chrome_store_url }}" class="btn">Chrome / Edge / Opera</a>
-            <a href="{{ site.firefox_store_url }}" class="btn">Firefox</a>
-          {% endif %}
-          <a href="{{ site.github.repository_url }}" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
-
     <div class="container">
-      <section id="main_content">
-        {{ content }}
-      </section>
+      <div class="gc">
+        <div class="gc-img">
+          <img src="src/assets/img/logo.png" alt="Logo GamersClub Booster" />
+        </div>
+
+        <div class="gc-main">
+          <div class="gc-infos">
+            <h4>
+              <a
+                href="https://github.com/gamersclub-booster/gamersclub-booster"
+                target="_blank"
+              >
+                Gamersclub Booster</a
+              >
+            </h4>
+            <p>
+              Extensão para navegadores com o intuito de melhorar a plataforma
+              Gamersclub
+            </p>
+          </div>
+
+          <div class="gc-downloads">
+            <a
+              href="https://chrome.google.com/webstore/detail/gamersclub-booster/dahnmmlhchpmmlgebpkpaofbefjdlpin"
+              target="_BLANK"
+            >
+              <div class="gc-browser">
+                <img
+                  src="src/assets/img/browsers/chrome.png"
+                  alt="Navegador Chrome"
+                />
+                <p>Chrome</p>
+              </div>
+            </a>
+            <a
+              href="https://chrome.google.com/webstore/detail/gamersclub-booster/dahnmmlhchpmmlgebpkpaofbefjdlpin"
+              target="_BLANK"
+            >
+              <div class="gc-browser">
+                <img
+                  src="src/assets/img/browsers/edge.png"
+                  alt="Navegador Edge"
+                />
+                <p>Edge</p>
+              </div>
+            </a>
+            <a
+              href="https://chrome.google.com/webstore/detail/gamersclub-booster/dahnmmlhchpmmlgebpkpaofbefjdlpin"
+              target="_BLANK"
+            >
+              <div class="gc-browser">
+                <img
+                  src="src/assets/img/browsers/opera.png"
+                  alt="Navegador Opera"
+                />
+                <p>Opera</p>
+              </div>
+            </a>
+            <a
+              href="https://chrome.google.com/webstore/detail/gamersclub-booster/dahnmmlhchpmmlgebpkpaofbefjdlpin"
+              target="_BLANK"
+            >
+              <div class="gc-browser">
+                <img
+                  src="src/assets/img/browsers/brave.png"
+                  alt="Navegador Brave"
+                />
+                <p>Brave</p>
+              </div>
+            </a>
+            <a
+              href="https://addons.mozilla.org/pt-BR/firefox/addon/gamersclub-booster/"
+              target="_BLANK"
+            >
+              <div class="gc-browser">
+                <img
+                  src="src/assets/img/browsers/firefox.png"
+                  alt="Navegador Firefox"
+                />
+                <p>Firefox</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="gc-features">
+            <h4>Funcionalidades 🎨</h4>
+
+            <div class="gc-images-features right">
+              <img src="src/assets/img/home/1.jpg" />
+              <p>
+                A extensão GamersClub Booster veio para auxiliar e melhorar a
+                GC. As funcionalidades contidas aqui são melhorias para
+                facilitar, tanto a escolha do seu time, como a criação de
+                partidas.
+              </p>
+            </div>
+
+            <div class="gc-images-features">
+              <p>
+                Com os KDRs você pode definir quem deixar no seu time, podendo
+                facilitar e muito a sua partida. Os KDRs mostram a média que seu
+                parceiro matou e morreu.
+              </p>
+              <img src="src/assets/img/home/2.jpg" />
+            </div>
+            <div class="gc-images-features right">
+              <img src="src/assets/img/home/3.jpg" />
+              <p>
+                Agora quando uma partida é encontrada, alem do efeito sonoro,
+                que é possível ativar no painel, tambem é enviado via Discord,
+                tanto o IP como o mapa, para quem ainda não sabe os nomes dar
+                aquela olhada antes da partida.
+              </p>
+            </div>
+            <div class="gc-images-features">
+              <p>
+                E ao final de cada partida é claro, gostariamos de saber os
+                pontos, isso pode ser visto facilmente agora no painel de minhas
+                partidas, essas e muito mais funcionalidades estão disponíveis
+                apenas com o BOOOOSTEEER.
+              </p>
+              <img src="src/assets/img/home/4.jpg" />
+            </div>
+          </div>
+
+          <div class="gc-contributors">
+            <h4>Contribuidores ✨</h4>
+
+            <div class="gc-peoples">
+              <div class="gc-people">
+                <img
+                  src="https://avatars.githubusercontent.com/u/1070818?v=4?s=100"
+                  alt="Henrique Bagio"
+                />
+                <a href="https://github.com/henriquelbsouza" target="_BLANK"
+                  ><p>Henrique Bagio</p></a
+                >
+
+                <div class="gc-people--emoticons">
+                  <span id="bugs">🐛</span>
+                  <span id="code">💻</span>
+                  <span id="maintenance">🚧</span>
+                  <span>🧑</span>
+                </div>
+              </div>
+
+              <div class="gc-people">
+                <img
+                  src="https://avatars.githubusercontent.com/u/5823077?v=4?s=100"
+                  alt="Jorge Brunetto"
+                />
+                <a href="http://jorgebrunetto.com.br/" target="_BLANK"
+                  ><p>Jorge Brunetto</p></a
+                >
+
+                <div class="gc-people--emoticons">
+                  <span id="bugs">🐛</span>
+                  <span id="code">💻</span>
+                  <span id="maintenance">🚧</span>
+                  <span>🎨</span>
+                </div>
+              </div>
+
+              <div class="gc-people">
+                <img
+                  src="https://avatars.githubusercontent.com/u/16657663?v=4?s=100"
+                  alt="João Victor Davim"
+                />
+                <a href="https://github.com/jvdavim" target="_BLANK"
+                  ><p>João Victor Davim</p></a
+                >
+
+                <div class="gc-people--emoticons">
+                  <span id="bugs">🐛</span>
+                  <span id="code">💻</span>
+                  <span id="maintenance">🚧</span>
+                </div>
+              </div>
+
+              <div class="gc-people">
+                <img
+                  src="https://avatars.githubusercontent.com/u/31969450?v=4?s=100"
+                  alt="Roberta Melo"
+                />
+                <a href="https://github.com/RobertaMelo" target="_BLANK"
+                  ><p>Roberta Melo</p></a
+                >
+
+                <div class="gc-people--emoticons">
+                  <span id="code">💻</span>
+                </div>
+              </div>
+
+              <div class="gc-people">
+                <img
+                  src="https://avatars.githubusercontent.com/u/14339481?v=4?s=100"
+                  alt="Luciano Carvalho"
+                />
+                <a href="https://github.com/lucianocarvalho" target="_BLANK"
+                  ><p>Luciano Carvalho</p></a
+                >
+
+                <div class="gc-people--emoticons">
+                  <span id="design">🎨</span>
+                </div>
+              </div>
+
+              <div class="gc-people">
+                <img
+                  src="https://avatars.githubusercontent.com/u/51386047?v=4?s=100"
+                  alt="davidhirle"
+                />
+                <a href="https://github.com/davidhirle" target="_BLANK"
+                  ><p>davidhirle</p></a
+                >
+
+                <div class="gc-people--emoticons">
+                  <span id="bugs">🐛</span>
+                </div>
+              </div>
+
+              <div class="gc-people">
+                <img
+                  src="https://avatars.githubusercontent.com/u/58441113?v=4?s=100"
+                  alt="matleal"
+                />
+                <a href="https://github.com/matleal" target="_BLANK"
+                  ><p>matleal</p></a
+                >
+
+                <div class="gc-people--emoticons">
+                  <span id="code">💻</span>
+                </div>
+              </div>
+
+              <div class="gc-people">
+                <img
+                  src="https://avatars.githubusercontent.com/u/48375198?v=4?s=100"
+                  alt="Bruno Faboci"
+                />
+                <a href="https://github.com/KINZs" target="_BLANK"
+                  ><p>Bruno Faboci</p></a
+                >
+
+                <div class="gc-people--emoticons">
+                  <span id="code">💻</span>
+                </div>
+              </div>
+
+              <div class="gc-people">
+                <img
+                  src="https://avatars.githubusercontent.com/u/56313687?v=4?s=100"
+                  alt="totinato"
+                />
+                <a href="https://github.com/totinato" target="_BLANK"
+                  ><p>totinato</p></a
+                >
+
+                <div class="gc-people--emoticons">
+                  <span id="bugs">🐛</span>
+                </div>
+              </div>
+
+              <div class="gc-people">
+                <img
+                  src="https://avatars.githubusercontent.com/u/35303121?v=4?s=100"
+                  alt="ozkcs"
+                />
+                <a href="https://github.com/ozkcs" target="_BLANK"
+                  ><p>ozkcs</p></a
+                >
+
+                <div class="gc-people--emoticons">
+                  <span id="code">💻</span>
+                  <span id="bugs">🐛</span>
+                </div>
+              </div>
+
+              <div class="gc-people">
+                <img
+                  src="https://avatars.githubusercontent.com/u/11398105?v=4?s=100"
+                  alt="Felipe Rugai"
+                />
+                <a href="https://average.digital/" target="_BLANK"
+                  ><p>Felipe Rugai</p></a
+                >
+
+                <div class="gc-people--emoticons">
+                  <span id="code">💻</span>
+                  <span>🎨</span>
+                </div>
+              </div>
+
+              <div class="gc-people">
+                <img
+                  src="https://avatars.githubusercontent.com/u/19313864?v=4?s=100"
+                  alt="Federico Babrauskas"
+                />
+                <a href="https://babrauskas.dev/" target="_BLANK"
+                  ><p>Federico Babrauskas</p></a
+                >
+
+                <div class="gc-people--emoticons">
+                  <span id="bugs">🐛</span>
+                </div>
+              </div>
+
+              <div class="gc-people">
+                <img
+                  src="https://avatars.githubusercontent.com/u/62257278?v=4?s=100"
+                  alt="Leandro Ribeiro"
+                />
+                <a href="https://github.com/leandroribeir0" target="_BLANK"
+                  ><p>Leandro Ribeiro</p></a
+                >
+
+                <div class="gc-people--emoticons">
+                  <span id="bugs">💻</span>
+                </div>
+              </div>
+
+              <div class="gc-people">
+                <img
+                  src="https://avatars.githubusercontent.com/u/1965127?v=4?s=100"
+                  alt="Nil Késede"
+                />
+                <a href="http://nilkesede.sh/" target="_BLANK"
+                  ><p>Nil Késede</p></a
+                >
+
+                <div class="gc-people--emoticons">
+                  <span id="bugs">💻</span>
+                  <span id="bugs">🐛</span>
+                </div>
+              </div>
+
+              <div class="gc-people">
+                <img
+                  src="https://avatars.githubusercontent.com/u/47400940?v=4?s=100"
+                  alt="Jimmy L."
+                />
+                <a href="https://github.com/Skyy4" target="_BLANK"
+                  ><p>Jimmy L.</p></a
+                >
+
+                <div class="gc-people--emoticons">
+                  <span id="bugs">💻</span>
+                  <span id="bugs">🐛</span>
+                  <span id="lang">🌍</span>
+                  <span id="warn">⚠️</span>
+                </div>
+              </div>
+
+              <div class="gc-people">
+                <img
+                  src="https://avatars.githubusercontent.com/u/84249430?v=4?s=100"
+                  alt="Diego Chueri"
+                />
+                <a href="https://github.com/dchueri" target="_BLANK"
+                  ><p>Diego Chueri</p></a
+                >
+
+                <div class="gc-people--emoticons">
+                  <span id="documentation">📖</span>
+                </div>
+              </div>
+
+              <div class="gc-people">
+                <img
+                  src="https://avatars.githubusercontent.com/u/45888984?v=4?s=100"
+                  alt="Fernando Barboza"
+                />
+                <a href="https://github.com/barbozafernando" target="_BLANK"
+                  ><p>Fernando Barboza</p></a
+                >
+
+                <div class="gc-people--emoticons">
+                  <span id="bugs">💻</span>
+                  <span id="documentation">📖</span>
+                </div>
+              </div>
+
+              <div class="gc-people">
+                <img
+                  src="https://avatars.githubusercontent.com/u/78946931?v=4?s=100"
+                  alt="Eduardo Mathioni"
+                />
+                <a href="https://github.com/EMathioni" target="_BLANK"
+                  ><p>Eduardo Mathioni</p></a
+                >
+
+                <div class="gc-people--emoticons">
+                  <span id="bugs">💻</span>
+                </div>
+              </div>
+
+              <div class="gc-people">
+                <img
+                  src="https://avatars.githubusercontent.com/u/61896505?v=4"
+                  alt="Gabriel"
+                />
+                <a href="https://github.com/gabrielmzl" target="_BLANK"
+                  ><p>Gabriel</p></a
+                >
+
+                <div class="gc-people--emoticons">
+                  <span>🎨</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    {% if site.google_analytics %}
-      <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', '{{ site.google_analytics }}', 'auto');
-        ga('send', 'pageview');
-      </script>
-    {% endif %}
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="src/assets/js/app.js"></script>
   </body>
 </html>

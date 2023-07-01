@@ -1,5 +1,5 @@
-tippy('#bugs', {
-    content: 'Bugs reports',
+tippy('#owner', {
+    content: 'Owner',
 });
 
 tippy('#code', {
@@ -10,14 +10,22 @@ tippy('#maintenance', {
     content: 'Maintenance',
 });
 
-tippy('#mentoring', {
-    content: 'Mentoring',
-});
-
 tippy('#bugs', {
     content: 'Bugs reports',
 });
 
 tippy('#design', {
     content: 'Design',
+});
+
+tippy('#documentation', {
+    content: 'Documentation',
+});
+
+tippy('#translation', {
+    content: 'Translation',
+});
+
+tippy('#mentoring', {
+    content: 'Mentoring',
 });

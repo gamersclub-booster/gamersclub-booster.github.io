@@ -202,6 +202,15 @@ const collaborators = [
         }
     },
 
+    {
+        name: "Breno Ribeiro",
+        image: "https://avatars.githubusercontent.com/u/72760932?v=4",
+        link: "https://github.com/brenordev",
+        activity: {
+            design: "🎨",
+        }
+    }
+
 // owner: "🧑",
 // code: "💻",
 // maintenance: "🚧",

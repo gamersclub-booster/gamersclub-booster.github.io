@@ -45,8 +45,8 @@ function hideEmptySpan() {
   const spanActivity = document.querySelectorAll(".person-activity span");
 
   spanActivity.forEach((span) => {
-    if (span.textContent && span.textContent.trim() === "undefined" || span.textContent.trim() === "") {
-      span.style.display = "none";
+    if (span.textContent === "undefined") {
+      span.parentNode.removeChild(span)
     }
   });
 }

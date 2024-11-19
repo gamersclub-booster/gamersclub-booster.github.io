@@ -5,6 +5,21 @@ const users = [
         link: "https://www.twitch.tv/rnakano",
     },
     {
+        name: "steelegabr",
+        image: "https://static-cdn.jtvnw.net/jtv_user_pictures/b47480b3-83cc-439d-b335-115b2cfd7526-profile_image-70x70.png",
+        link: "https://www.twitch.tv/steelegabr",
+    },
+    {
+        name: "imh0nda",
+        image: "https://static-cdn.jtvnw.net/jtv_user_pictures/7f3c1c75-4b72-4b2a-b6bd-235448c745b3-profile_image-70x70.png",
+        link: "https://www.twitch.tv/imh0nda",
+    },
+    {
+        name: "wastzera",
+        image: "https://static-cdn.jtvnw.net/jtv_user_pictures/a5ddd81c-8d5b-4fc0-92a8-ec00ad65c5fb-profile_image-70x70.png",
+        link: "https://www.twitch.tv/wastzera",
+    },
+    {
         name: "Liminha",
         image: "https://static-cdn.jtvnw.net/jtv_user_pictures/308fa859-303d-44eb-a383-96eb6c18e78a-profile_image-70x70.png", 
         link: "https://www.twitch.tv/liminhag0d"
@@ -26,7 +41,7 @@ const users = [
     },
     {
         name: "bjamfps",
-        image: "https://static-cdn.jtvnw.net/jtv_user_pictures/c417cfab-35ca-42fd-8256-09a38c8ab577-profile_image-70x70.png", 
+        image: "https://static-cdn.jtvnw.net/jtv_user_pictures/583fdf0c-0586-4fb8-b617-b778d372798e-profile_image-70x70.png", 
         link: "https://www.twitch.tv/bjamfps"
     },
     {

@@ -1,6 +1,6 @@
 const collaborators = [
     {
-        name: "Henrique Bagio",
+        name: "Henrique Souza",
         image: "https://avatars.githubusercontent.com/u/1070818?v=4?s=100",
         link: "https://github.com/henriquelbsouza",
         activity: {
